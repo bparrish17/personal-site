@@ -1,4 +1,48 @@
 
+@import 'variables';
+
 .top {
-  color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  margin: 0 0 50px 50px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+    .name-container {
+      display: flex;
+      
+      span {
+        font-size: 48px;
+        padding: 2px 15px 5px 15px;
+        color: white;
+        letter-spacing: 3px;
+    
+        &.lastname {
+          background-color: $yellow;
+          color: $gray;
+          font-weight: $bold;
+        }
+      }
+    }
+
+    .separator {
+      align-self: flex-end;
+      width: 250px;
+      border: solid 1px white;
+      margin: 20px 0px 10px;
+    }
+
+    .title {
+      align-self: flex-end;
+      margin-right: 0px;
+      letter-spacing: 3px;
+      color: white;
+      font-size: 20px;
+    }
+  }
 }

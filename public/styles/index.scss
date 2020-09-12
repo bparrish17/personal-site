@@ -1,6 +1,14 @@
 
 @import 'top';
+@import 'variables';
+@import 'fonts';
 
-.section {
-  background-color: blue;
+html {
+  height: 100%;
+  font-family: 'LatoRegular' !important;
+}
+
+body {
+  margin: 0px;
+  background-color: $gray;
 }
