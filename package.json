@@ -1,0 +1,19 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Personal Resume Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js & npm run scss:watch",
+    "scss": "node-sass public/styles/index.scss public/style.css",
+    "scss:watch": "node-sass --watch public/styles -o public/stylesheets",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "nunjucks": "^3.2.2"
+  }
+}
