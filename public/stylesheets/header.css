@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 45px);
+  padding: 15px;
+  margin-right: 15px;
+  color: white; }
+  .header a:not(:last-child) {
+    margin-right: 10px; }
+  .header__icon {
+    height: 30px; }

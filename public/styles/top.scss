@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 100vh;
-  margin: 0 0 50px 50px;
 
   &__info {
     display: flex;
     flex-direction: column;
     width: max-content;
+    margin: 0 0 100px 100px;
 
     .name-container {
       display: flex;

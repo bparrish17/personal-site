@@ -4,12 +4,14 @@ const path = require('path')
 const app = express()
 const port = 3000
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public', 'stylesheets')));
+app.use(express.static(path.join(__dirname, 'public', 'assets')));
+app.use(express.static(path.join(__dirname, 'public', 'js')));
 
 nunjucks.configure('views', {
-    autoescape: true,
-    express: app,
-    watch: true
+  autoescape: true,
+  express: app,
+  watch: true
 });
 
 app.get('/', (req, res) => {
