@@ -8,7 +8,15 @@
   &__header {
     height: fit-content;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .separator {
+      width: 400px;
+      height: 0px;
+      border: solid 1px $yellow;
+      margin: 10px 0px;
+    }
 
     .text {
       // todo: make mixin
@@ -16,22 +24,6 @@
       font-weight: $bold;
       padding: 15px;
       letter-spacing: 3px;
-    }
-  }
-
-  &__item {
-    display: flex;
-    padding: 100px;
-
-    .image {
-      margin-right: 100px;
-    }
-
-    .info {
-      &__company-name {
-        font-size: 24px;
-        font-weight: $bold;
-      }
     }
   }
 }

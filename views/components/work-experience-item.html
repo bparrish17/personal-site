@@ -1,0 +1,22 @@
+{% macro item(link, image, companyName, jobTitle, description) %}
+  <div class="work-experience-item {{ companyName.toLowerCase() }}">
+    {# Experience Image #}
+    <a class="work-experience-item__image" href="{{ link }}" target="_blank">
+      <img src="{{ image }}" />
+    </a>
+
+    {# Experience Info #}
+    <div class="work-experience-item__info">
+      <span class="company-name">
+        {{ companyName }}
+      </span>
+      <span class="job-title">
+        {{ jobTitle }}
+      </span>
+
+      <p class="description">
+        {{ description }}
+      </p>
+    </div>
+  </div>
+{% endmacro %}

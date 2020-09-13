@@ -1,3 +1,6 @@
+/*********************************************
+* HEADER
+*********************************************/
 .header {
   z-index: 2;
   position: fixed;
@@ -6,6 +9,8 @@
   width: calc(100% - 30px);
   padding: 15px;
   color: white; }
+  .header a:hover {
+    opacity: 0.8; }
   .header a:not(:last-child) {
     margin-right: 10px; }
   .header a:last-child {
@@ -24,3 +29,35 @@
     height: 56px; }
     .scroller__button:hover {
       opacity: 0.6; }
+
+/*********************************************
+* WORK EXPERIENCE
+*********************************************/
+.work-experience-item {
+  display: flex;
+  padding: 100px; }
+  .work-experience-item.jibe img {
+    background-color: white; }
+  .work-experience-item__image {
+    width: 200px;
+    height: 200px;
+    margin-right: 100px; }
+    .work-experience-item__image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 45px; }
+  .work-experience-item__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    letter-spacing: 1px; }
+    .work-experience-item__info .company-name {
+      font-size: 24px;
+      font-weight: 700; }
+    .work-experience-item__info .job-title {
+      font-size: 18px;
+      margin-top: 5px;
+      letter-spacing: 1px; }
+    .work-experience-item__info .description {
+      margin-top: 20px;
+      font-size: 14px; }

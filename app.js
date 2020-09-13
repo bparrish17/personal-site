@@ -3,6 +3,7 @@ const nunjucks = require('nunjucks')
 const path = require('path')
 const app = express()
 const port = 3000
+const data = require('./text.js');
 
 app.use(express.static(path.join(__dirname, 'public', 'stylesheets')));
 app.use(express.static(path.join(__dirname, 'public', 'assets')));
@@ -15,7 +16,7 @@ nunjucks.configure('views', {
 });
 
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.render('index.html', data);
 });
 
 app.listen(port, () => {
