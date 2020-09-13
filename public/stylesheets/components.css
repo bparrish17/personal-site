@@ -1,0 +1,26 @@
+.header {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 30px);
+  padding: 15px;
+  color: white; }
+  .header a:not(:last-child) {
+    margin-right: 10px; }
+  .header a:last-child {
+    margin-right: 20px; }
+  .header__icon {
+    height: 35px; }
+
+.scroller {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0; }
+  .scroller__button {
+    cursor: pointer;
+    height: 56px; }
+    .scroller__button:hover {
+      opacity: 0.6; }

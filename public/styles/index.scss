@@ -1,5 +1,6 @@
-@import 'header';
+@import 'components';
 @import 'top';
+@import 'work-experience';
 @import 'variables';
 @import 'fonts';
 
@@ -9,5 +10,6 @@ html {
 
 body {
   margin: 0px;
+  color: white;
   background-color: $gray;
 }

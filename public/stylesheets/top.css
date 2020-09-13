@@ -1,8 +1,16 @@
 .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh; }
+  position: relative;
+  min-height: 100vh;
+  background-image: url("img/nightsky.jpg");
+  background-size: cover; }
+  .top__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, transparent, black);
+    min-height: 100vh;
+    width: 100%; }
   .top__info {
     display: flex;
     flex-direction: column;

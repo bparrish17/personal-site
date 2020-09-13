@@ -2,10 +2,24 @@
 @import 'variables';
 
 .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  background-image: url('img/nightsky.jpg');
+  background-size: cover;
+  // background: linear-gradient(to right, url('img/nightsky.jpg'), rgba(255,255,255,0) 20%);
+
+  // background: linear-gradient(to right, rgba(255,255,255,0) 20%,
+  //             rgba(255,255,255,1)), url('img/nightsky.jpg');
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, transparent, black);
+    min-height: 100vh;
+    width: 100%;
+  }
 
   &__info {
     display: flex;

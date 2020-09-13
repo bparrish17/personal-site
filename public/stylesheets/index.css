@@ -1,21 +1,43 @@
 .header {
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  width: calc(100% - 45px);
+  width: calc(100% - 30px);
   padding: 15px;
-  margin-right: 15px;
   color: white; }
   .header a:not(:last-child) {
     margin-right: 10px; }
+  .header a:last-child {
+    margin-right: 20px; }
   .header__icon {
-    height: 30px; }
+    height: 35px; }
+
+.scroller {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0; }
+  .scroller__button {
+    cursor: pointer;
+    height: 56px; }
+    .scroller__button:hover {
+      opacity: 0.6; }
 
 .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh; }
+  position: relative;
+  min-height: 100vh;
+  background-image: url("img/nightsky.jpg");
+  background-size: cover; }
+  .top__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, transparent, black);
+    min-height: 100vh;
+    width: 100%; }
   .top__info {
     display: flex;
     flex-direction: column;
@@ -44,6 +66,28 @@
       color: white;
       font-size: 20px; }
 
+.work-experience {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, black, #111217);
+  padding: 100px 0px; }
+  .work-experience__header {
+    height: fit-content;
+    display: flex;
+    justify-content: center; }
+    .work-experience__header .text {
+      font-size: 28px;
+      font-weight: 700;
+      padding: 15px;
+      letter-spacing: 3px; }
+  .work-experience__item {
+    display: flex;
+    padding: 100px; }
+    .work-experience__item .image {
+      margin-right: 100px; }
+    .work-experience__item .info__company-name {
+      font-size: 24px;
+      font-weight: 700; }
+
 @font-face {
   font-family: 'LatoRegular';
   src: url("fonts/Lato-Regular.ttf") format("truetype");
@@ -61,4 +105,5 @@ html {
 
 body {
   margin: 0px;
+  color: white;
   background-color: #111217; }
