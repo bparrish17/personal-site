@@ -26,6 +26,6 @@ function copyEmail() {
 
 function onScrollButtonClicked() {
   console.log('click');
-  const section = document.getElementById('work-experience');
+  const section = document.getElementById('employment-history');
   section.scrollIntoView({ behavior: 'smooth' });
 }

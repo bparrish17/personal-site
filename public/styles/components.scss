@@ -50,9 +50,34 @@
 * WORK EXPERIENCE
 *********************************************/
 
-.work-experience-item {
+.experience-item {
     display: flex;
-    padding: 100px;
+    padding-top: 150px;
+    padding-left: 100px;
+
+    &.icims {
+      padding-top: 100px;
+    }
+
+    &.fullstack-academy {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 45px;
+
+        img {
+          width: 80%;
+          height: 80%;
+          border-radius: none;
+        }
+      }
+    }
+
+    &:last-of-type {
+      padding-bottom: 100px;
+    }
 
     &.jibe {
       img {

@@ -1,8 +1,8 @@
 @import 'variables';
 
-.work-experience {
+.employment-history,
+.education-history {
   min-height: 100vh;
-  background: linear-gradient(to bottom, black, $gray);
   padding: 100px 0px;
 
   &__header {
@@ -19,11 +19,15 @@
     }
 
     .text {
-      // todo: make mixin
+      // todo: make mixin for this
       font-size: 28px;
       font-weight: $bold;
       padding: 15px;
       letter-spacing: 3px;
     }
   }
+}
+
+.employment-history {
+  background: linear-gradient(black, $gray);
 }

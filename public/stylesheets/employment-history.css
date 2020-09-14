@@ -1,0 +1,25 @@
+.employment-history,
+.education-history {
+  min-height: 100vh;
+  padding: 100px 0px; }
+  .employment-history__header,
+  .education-history__header {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .employment-history__header .separator,
+    .education-history__header .separator {
+      width: 400px;
+      height: 0px;
+      border: solid 1px #fddf27;
+      margin: 10px 0px; }
+    .employment-history__header .text,
+    .education-history__header .text {
+      font-size: 28px;
+      font-weight: 700;
+      padding: 15px;
+      letter-spacing: 3px; }
+
+.employment-history {
+  background: linear-gradient(black, #111217); }

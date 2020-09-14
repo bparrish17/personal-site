@@ -33,32 +33,47 @@
 /*********************************************
 * WORK EXPERIENCE
 *********************************************/
-.work-experience-item {
+.experience-item {
   display: flex;
-  padding: 100px; }
-  .work-experience-item.jibe img {
+  padding-top: 150px;
+  padding-left: 100px; }
+  .experience-item.icims {
+    padding-top: 100px; }
+  .experience-item.fullstack-academy a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 45px; }
+    .experience-item.fullstack-academy a img {
+      width: 80%;
+      height: 80%;
+      border-radius: none; }
+  .experience-item:last-of-type {
+    padding-bottom: 100px; }
+  .experience-item.jibe img {
     background-color: white; }
-  .work-experience-item__image {
+  .experience-item__image {
     width: 200px;
     height: 200px;
     margin-right: 100px; }
-    .work-experience-item__image img {
+    .experience-item__image img {
       width: 100%;
       height: 100%;
       border-radius: 45px; }
-  .work-experience-item__info {
+  .experience-item__info {
     display: flex;
     flex-direction: column;
     width: 50%;
     letter-spacing: 1px; }
-    .work-experience-item__info .company-name {
+    .experience-item__info .company-name {
       font-size: 24px;
       font-weight: 700; }
-    .work-experience-item__info .job-title {
+    .experience-item__info .job-title {
       font-size: 18px;
       margin-top: 5px;
       letter-spacing: 1px; }
-    .work-experience-item__info .description {
+    .experience-item__info .description {
       margin-top: 20px;
       font-size: 14px; }
 
@@ -79,7 +94,7 @@
     display: flex;
     flex-direction: column;
     width: max-content;
-    margin: 0 0 100px 100px; }
+    margin: 0 0 150px 100px; }
     .top__info .name-container {
       display: flex; }
       .top__info .name-container span {
@@ -103,25 +118,34 @@
       color: white;
       font-size: 20px; }
 
-.work-experience {
+.employment-history,
+.education-history {
   min-height: 100vh;
-  background: linear-gradient(to bottom, black, #111217);
   padding: 100px 0px; }
-  .work-experience__header {
+  .employment-history__header,
+  .education-history__header {
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .work-experience__header .separator {
+    .employment-history__header .separator,
+    .education-history__header .separator {
       width: 400px;
       height: 0px;
       border: solid 1px #fddf27;
       margin: 10px 0px; }
-    .work-experience__header .text {
+    .employment-history__header .text,
+    .education-history__header .text {
       font-size: 28px;
       font-weight: 700;
       padding: 15px;
       letter-spacing: 3px; }
+
+.employment-history {
+  background: linear-gradient(black, #111217); }
+
+.education-history {
+  background: linear-gradient(to bottom, #111217, black); }
 
 @font-face {
   font-family: 'LatoRegular';

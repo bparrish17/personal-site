@@ -1,12 +1,13 @@
 {% macro item(link, image, companyName, jobTitle, description) %}
-  <div class="work-experience-item {{ companyName.toLowerCase() }}">
+  {% set companyClass = companyName.split(' ').join('-').toLowerCase() %}
+  <div class="experience-item {{ companyClass }}">
     {# Experience Image #}
-    <a class="work-experience-item__image" href="{{ link }}" target="_blank">
+    <a class="experience-item__image" href="{{ link }}" target="_blank">
       <img src="{{ image }}" />
     </a>
 
     {# Experience Info #}
-    <div class="work-experience-item__info">
+    <div class="experience-item__info">
       <span class="company-name">
         {{ companyName }}
       </span>
