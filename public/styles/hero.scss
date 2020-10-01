@@ -1,0 +1,68 @@
+@import 'variables';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 150px 0;
+  background: white;
+
+  &> * {
+    width: 50%;
+  }
+
+  &__headline {
+    background-color: $yellow;
+    padding: 20px 50px 20px 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  &__skills-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 20px 50px 20px 30px;
+
+    &.professional-skills {
+      width: 55%;
+    }
+
+    &.professional-tech {
+      width: 45%;
+    }
+
+    h4 {
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:not(:first-child) {
+          margin-left: 40px;
+        }
+  
+        img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 10px;
+          object-fit: contain;
+        }
+  
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

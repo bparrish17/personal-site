@@ -1,7 +1,7 @@
 .top {
   position: relative;
   min-height: 100vh;
-  background-image: url("img/nightsky.jpg");
+  background-image: url("img/atl_midtown.png");
   background-size: cover; }
   .top__overlay {
     position: absolute;

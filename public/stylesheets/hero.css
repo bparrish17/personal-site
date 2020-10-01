@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 150px 0;
+  background: white; }
+  .hero > * {
+    width: 50%; }
+  .hero__headline {
+    background-color: #fddf27;
+    padding: 20px 50px 20px 30px;
+    letter-spacing: 1px;
+    line-height: 30px; }
+  .hero__skills-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 20px 50px 20px 30px; }
+    .hero__skills-section.professional-skills {
+      width: 55%; }
+    .hero__skills-section.professional-tech {
+      width: 45%; }
+    .hero__skills-section h4 {
+      text-align: center;
+      letter-spacing: 1px; }
+    .hero__skills-section .skills {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px; }
+      .hero__skills-section .skills__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .hero__skills-section .skills__item:not(:first-child) {
+          margin-left: 40px; }
+        .hero__skills-section .skills__item img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 10px;
+          object-fit: contain; }
+        .hero__skills-section .skills__item span {
+          font-size: 14px; }

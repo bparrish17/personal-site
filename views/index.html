@@ -10,7 +10,8 @@
   </head>
   <body>
     {% include "./components/header.html" %}
-    {% include "./sections/top.html" %}
+    {# {% include "./sections/top.html" %} #}
+    {% include "./sections/hero.html" %}
     {{ HistorySection.section('Professional Experience', 'employment-history', EMPLOYMENT_HISTORY) }}
     {{ HistorySection.section('Education', 'education-history', EDUCATION_HISTORY) }}
     {% include "./components/scroller.html" %}

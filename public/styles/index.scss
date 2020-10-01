@@ -1,5 +1,6 @@
 @import 'components';
 @import 'top';
+@import 'hero';
 @import 'employment-history';
 @import 'education-history';
 @import 'variables';
@@ -11,6 +12,6 @@ html {
 
 body {
   margin: 0px;
-  color: white;
-  background-color: $gray;
+  color: black;
+  background-color: white;
 }
