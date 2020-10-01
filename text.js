@@ -62,9 +62,21 @@ const PROFESSIONAL_SKILLS = [
     name: 'CSS3',
     image: 'icons/css_logo.png'
   },
+  // {
+  //   name: 'SCSS',
+  //   image: 'icons/scss_logo.png'
+  // },
+  {
+    name: 'Jasmine',
+    image: 'icons/jasmine_logo.png'
+  },
   {
     name: 'ReactJS',
     image: 'icons/react_logo.png'
+  },
+  {
+    name: 'RxJS',
+    image: 'icons/rxjs_logo.png'
   },
 ]
 
@@ -73,18 +85,22 @@ const PROFESSIONAL_TECH = [
     name: 'AWS',
     image: 'icons/aws_logo.png'
   },
+  // {
+  //   name: 'RxJS',
+  //   image: 'icons/rxjs_logo.png'
+  // },
   {
     name: 'Jenkins',
     image: 'icons/jenkins_logo.png'
   },
   {
-    name: 'RxJS',
-    image: 'icons/rxjs_logo.png'
+    name: 'Python',
+    image: 'icons/python_logo.png'
   },
-  {
-    name: 'SCSS',
-    image: 'icons/scss_logo.png'
-  },
+  // {
+  //   name: 'SCSS',
+  //   image: 'icons/scss_logo.png'
+  // },
 ]
 
 module.exports = {

@@ -1,36 +1,8 @@
-{# Skill Item Component #}
-{% macro skillItem(name, image) %}
-  <div class="skills__item">
-    <img src="{{ image }}" />
-    <span>{{ name }}</span>
-  </div>
-{% endmacro %}
-
 {# Hero Section #}
 <section class="section hero">
   <div class="hero__headline">
     <b>hello!</b> im a software engineer based out of atlanta. im passionate 
     about building robust web applications, creating seamless user experiences, 
-    and cheering for sports teams that consistently disappoint me
-  </div>
-
-  {# Professional Skills #}
-  <div class="hero__skills-section professional-skills">
-    <h4>here are some skills I use professionally</h4>
-    <div class="skills">
-      {% for skill in PROFESSIONAL_SKILLS %}
-        {{ skillItem(skill.name, skill.image) }}
-      {% endfor %}
-    </div>
-  </div>
-
-  {#  #}
-  <div class="hero__skills-section professional-tech">
-    <h4>and some technologies ive used with them</h4>
-    <div class="skills">
-      {% for skill in PROFESSIONAL_TECH %}
-        {{ skillItem(skill.name, skill.image) }}
-      {% endfor %}
-    </div>
+    and rooting for sports teams that consistently disappoint me
   </div>
 </section>

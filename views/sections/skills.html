@@ -1,0 +1,30 @@
+{# Skill Item Component #}
+{% macro skillItem(name, image) %}
+  <div class="list__item">
+    <img src="{{ image }}" />
+    <span>{{ name }}</span>
+  </div>
+{% endmacro %}
+
+<section class="section skills">
+
+  {# Professional Skills #}
+  <div class="skills__set professional-skills">
+    <h4>here are some skills I use professionally</h4>
+    <div class="list">
+      {% for skill in PROFESSIONAL_SKILLS %}
+        {{ skillItem(skill.name, skill.image) }}
+      {% endfor %}
+    </div>
+  </div>
+
+  {#  #}
+  <div class="skills_set professional-tech">
+    <h4>and some other technologies I enjoy working with</h4>
+    <div class="list">
+      {% for skill in PROFESSIONAL_TECH %}
+        {{ skillItem(skill.name, skill.image) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
