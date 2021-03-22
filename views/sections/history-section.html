@@ -15,7 +15,7 @@
     </div>
 
     {% for item in experienceArr %}
-      {{ Experience.item(item.link, item.image, item.companyName, item.jobTitle, item.description) }}
+      {{ Experience.item(item.link, item.image, item.companyName, item.positions, item.description, item.actionItems) }}
     {% endfor %}
 
     </section>

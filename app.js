@@ -16,6 +16,7 @@ nunjucks.configure('views', {
 });
 
 app.get('/', (req, res) => {
+  console.warn('data', data);
   res.render('index.html', data);
 });
 

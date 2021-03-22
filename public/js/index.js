@@ -29,3 +29,7 @@ function onScrollButtonClicked() {
   const section = document.getElementById('employment-history');
   section.scrollIntoView({ behavior: 'smooth' });
 }
+
+function clickTest(items) {
+  console.log('items', items);
+}

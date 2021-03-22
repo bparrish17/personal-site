@@ -5,22 +5,44 @@ const EMPLOYMENT_HISTORY = [
     link: 'http://icims.com',
     image: 'img/icims_logo.png',
     companyName: 'iCIMS',
-    jobTitle: 'software engineer ii',
-    description: GENERIC_DESCRIPTION
+    positions: [
+      { jobTitle: 'senior software engineer', dates: 'February 2021 - Present' },
+      { jobTitle: 'software engineer', dates: 'July 2019 – February 2021' }
+    ],
+    description: 'Improved unit test coverage, internationalization, accessibility, and documentation of Angular web app',
+    actionItems: [
+      'Interviewed, mentored, and reviewed pull requests for interns, contractors, and other incoming team members',
+      'Integrated app with external and internal APIs, including AWS, Google Cloud, Azure, and client SSO services',
+      'Automated unit test creation by building API for saving and synchronously fetching mock HTTP responses'
+    ]
   },
   {
     link: 'http://go.allclear.app',
     image: 'img/allclear_logo.png',
     companyName: 'AllClear',
-    jobTitle: 'volunteer - engineering',
-    description: GENERIC_DESCRIPTION
+    positions: [
+      { jobTitle: 'volunteer - engineering', dates: 'January 2019 - June 2019' }
+    ],
+    description: 'Collaborated with fellow industry professionals to build React web app for finding COVID-19 testing services',
+    actionItems: [
+      'Developed Google Maps, search filtering, analytics, and authentication features in agile team framework',
+      'Wrote onboarding documentation for new volunteers to set up their React Native development environment'
+    ],
   },
   {
     link: 'http://jibe.com',
     image: 'img/jibe_logo.png',
     companyName: 'Jibe',
-    jobTitle: 'associate software engineer',
-    description: GENERIC_DESCRIPTION
+    positions: [
+      { jobTitle: 'associate software engineer', dates: 'January 2019 - June 2019' },
+      { jobTitle: 'software engineer intern', dates: 'January 2018 - December 2018' }
+    ],
+    description: 'Developed new features and improved existing software across the stack for the Javascript development team',
+    actionItems: [
+      'Architected view and component structure that would become long-standing framework for application',
+      'Refactored legacy AngularJS application into scaleable, feature-rich Angular app for enterprise product suite',
+      'Developed mobile-responsive, accessible, and robust landing pages based on client design specifications'
+    ]
   }
 ]
 
@@ -30,14 +52,16 @@ const EDUCATION_HISTORY = [
     image: 'img/fsa_logo.png',
     companyName: 'Fullstack Academy',
     jobTitle: 'software engineering immersive bootcamp',
-    description: GENERIC_DESCRIPTION
+    description: GENERIC_DESCRIPTION,
+    actionItems: []
   },
   {
     link: 'http://sc.edu',
     image: 'img/uschc_logo.png',
-    companyName: 'University of South Carolina',
+    companyName: 'University of South Carolina Honors College',
     jobTitle: 'darla moore school of business',
-    description: GENERIC_DESCRIPTION
+    description: GENERIC_DESCRIPTION,
+    actionItems: []
   }
 ]
 

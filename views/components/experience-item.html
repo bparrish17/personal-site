@@ -1,4 +1,4 @@
-{% macro item(link, image, companyName, jobTitle, description) %}
+{% macro item(link, image, companyName, positions, description, actionItems) %}
   {% set companyClass = companyName.split(' ').join('-').toLowerCase() %}
   <div class="experience-item {{ companyClass }}">
     {# Experience Image #}
@@ -8,16 +8,26 @@
 
     {# Experience Info #}
     <div class="experience-item__info">
-      <span class="company-name">
+      <span class="company-name" onclick="clickTest(actionItems)">
         {{ companyName }}
       </span>
-      <span class="job-title">
-        {{ jobTitle }}
-      </span>
+      <div class="positions-container">
+        {% for position in positions %}
+          <div class="position">
+            <span class="position__job-title">{{ position.jobTitle }}</span>
+            <span class="position__dates">{{ position.dates }}</span>
+          </div>
+        {% endfor %}
+      </div>
 
       <p class="description">
         {{ description }}
       </p>
+      <ul class="action-item-list">
+        {% for actionItem in actionItems %}
+          <li>{{ actionItem }}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 {% endmacro %}

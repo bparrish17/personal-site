@@ -4,6 +4,7 @@
   id="employment-history"
   class="section employment-history"
 >
+
   <div class="employment-history__header">
     <div class="text">
       Professional Experience
@@ -14,7 +15,7 @@
   </div>
 
   {% for item in EMPLOYMENT_HISTORY %}
-    {{ WorkExp.item(item.link, item.image, item.companyName, item.jobTitle, item.description) }}
+    {{ WorkExp.item(item.link, item.image, item.companyName, item.jobTitle, item.description, item.actionItems) }}
   {% endfor %}
 
 </section>
