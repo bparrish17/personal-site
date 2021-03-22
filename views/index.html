@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-{% import "./sections/history-section.html" as HistorySection %}
+{% import "./sections/employment-history.html" as EmploymentHistory %}
+{% import "./sections/education-history.html" as EducationHistory %}
 <script src="index.js"></script>
 
 <html>
@@ -12,8 +13,8 @@
     {% include "./components/header.html" %}
     {# {% include "./sections/top.html" %} #}
     {% include "./sections/hero.html" %}
-    {{ HistorySection.section('Professional Experience', 'employment-history', EMPLOYMENT_HISTORY) }}
-    {{ HistorySection.section('Education', 'education-history', EDUCATION_HISTORY) }}
+    {{ EmploymentHistory.section('Professional Experience', 'employment-history', EMPLOYMENT_HISTORY) }}
+    {{ EducationHistory.section('Education', 'education-history', EDUCATION_HISTORY) }}
     {% include "./components/scroller.html" %}
   </body>
 </html>

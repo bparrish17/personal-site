@@ -1,0 +1,29 @@
+{% macro item(link, image, schoolName, subtitle, description) %}
+  {% set schoolClass = schoolName.split(' ').join('-').toLowerCase() %}
+  <div class="experience-item {{ companyClass }}">
+    {# Experience Image #}
+    <a class="experience-item__image" href="{{ link }}" target="_blank">
+      <img src="{{ image }}" />
+    </a>
+
+    {# Experience Info #}
+    <div class="experience-item__info">
+      <span class="company-name" onclick="clickTest(actionItems)">
+        {{ schoolName }}
+      </span>
+
+      <span class="job-title">
+        {{ subtitle }}
+      </span>
+
+      <p class="description">
+        {{ description }}
+      </p>
+      <ul class="action-item-list">
+        {% for actionItem in actionItems %}
+          <li>{{ actionItem }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endmacro %}

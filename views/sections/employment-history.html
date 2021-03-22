@@ -1,21 +1,22 @@
-{% import "../components/experience-item.html" as WorkExp %}
+{% import "../components/employment-item.html" as Employment %}
 
-<section
-  id="employment-history"
-  class="section employment-history"
->
+{% macro section(title, key, experienceArr) %}
+  <section
+    id="{{ key }}"
+    class="section {{ key }}"
+  >
+    <div class="{{ key }}__header">
+      <div class="text">
+        {{ title }}
+      </div>
 
-  <div class="employment-history__header">
-    <div class="text">
-      Professional Experience
+      {# Separator #}
+      <div class="separator"></div>
     </div>
 
-    {# Separator #}
-    <div class="separator"></div>
-  </div>
+    {% for item in experienceArr %}
+      {{ Employment.item(item.link, item.image, item.companyName, item.positions, item.description, item.actionItems) }}
+    {% endfor %}
 
-  {% for item in EMPLOYMENT_HISTORY %}
-    {{ WorkExp.item(item.link, item.image, item.companyName, item.jobTitle, item.description, item.actionItems) }}
-  {% endfor %}
-
-</section>
+    </section>
+{% endmacro %}

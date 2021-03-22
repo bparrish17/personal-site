@@ -50,18 +50,16 @@ const EDUCATION_HISTORY = [
   {
     link: 'http://fullstackacademy.com',
     image: 'img/fsa_logo.png',
-    companyName: 'Fullstack Academy',
-    jobTitle: 'software engineering immersive bootcamp',
+    schoolName: 'Fullstack Academy',
+    subtitle: 'software engineering immersive bootcamp',
     description: GENERIC_DESCRIPTION,
-    actionItems: []
   },
   {
     link: 'http://sc.edu',
     image: 'img/uschc_logo.png',
-    companyName: 'University of South Carolina Honors College',
-    jobTitle: 'darla moore school of business',
+    schoolName: 'University of South Carolina Honors College',
+    subtitle: 'darla moore school of business',
     description: GENERIC_DESCRIPTION,
-    actionItems: []
   }
 ]
 
