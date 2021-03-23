@@ -85,13 +85,16 @@
     flex-direction: column;
     width: 600px;
     letter-spacing: 0px; }
-    .experience-item__info .company-name {
+    .experience-item__info .company-name,
+    .experience-item__info .school-name {
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1px; }
+    .experience-item__info .subtitle {
+      font-size: 18px;
+      letter-spacing: 1px; }
     .experience-item__info .positions-container {
-      padding: 10px 0px 20px 0px;
-      border-bottom: solid 1px; }
+      padding: 10px 0px 20px 0px; }
       .experience-item__info .positions-container .position {
         display: flex;
         justify-content: space-between;
@@ -101,6 +104,15 @@
           letter-spacing: 1px; }
         .experience-item__info .positions-container .position__dates {
           font-size: 16px; }
+    .experience-item__info .breakline {
+      border-bottom: solid 1px; }
+    .experience-item__info .additional-info-line {
+      font-size: 16px; }
+      .experience-item__info .additional-info-line:first-child {
+        margin-top: 20px; }
+      .experience-item__info .additional-info-line:not(:first-child) {
+        margin-top: 10px; }
+    .experience-item__info .subtitle,
     .experience-item__info .description,
     .experience-item__info .action-item-list li:not(:first-child) {
       margin-top: 20px;

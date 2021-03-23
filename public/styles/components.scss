@@ -77,90 +77,111 @@
 *********************************************/
 
 .experience-item {
-    display: flex;
-    padding-top: 150px;
-    margin: 0 auto;
-    width: fit-content;
+  display: flex;
+  padding-top: 150px;
+  margin: 0 auto;
+  width: fit-content;
 
-    &.icims {
-      padding-top: 100px;
-    }
+  &.icims {
+    padding-top: 100px;
+  }
 
-    &.fullstack-academy {
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 45px;
-
-        img {
-          width: 80%;
-          height: 80%;
-          border-radius: none;
-        }
-      }
-    }
-
-    &:last-of-type {
-      padding-bottom: 100px;
-    }
-
-    &.jibe {
-      img {
-        background-color: white;
-      }
-    }
-
-    &__image {
-      width: 60px;
-      height: 60px;
-      margin-right: 30px;
-      
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-      }
-    }
-
-    &__info {
+  &.fullstack-academy {
+    a {
       display: flex;
-      flex-direction: column;
-      width: 600px;
-      letter-spacing: 0px;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 45px;
 
-      .company-name {
-        font-size: 24px;
-        font-weight: $bold;
-        letter-spacing: 1px;
-      }
-
-      .positions-container {
-        padding: 10px 0px 20px 0px;
-        border-bottom: solid 1px;
-        
-        .position {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 5px;
-          
-          &__job-title {
-            font-size: 18px;
-            letter-spacing: 1px;
-          }
-  
-          &__dates {
-            font-size: 16px;
-          }
-        }
-      }
-
-      // styling for description and each individual bullet
-      .description,
-      .action-item-list li:not(:first-child) {
-        margin-top: 20px;
-        font-size: 16px;
+      img {
+        width: 80%;
+        height: 80%;
+        border-radius: none;
       }
     }
   }
+
+  &:last-of-type {
+    padding-bottom: 100px;
+  }
+
+  &.jibe {
+    img {
+      background-color: white;
+    }
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    letter-spacing: 0px;
+
+    .company-name,
+    .school-name {
+      font-size: 24px;
+      font-weight: $bold;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .positions-container {
+      padding: 10px 0px 20px 0px;
+
+      .position {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        
+        &__job-title {
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+
+        &__dates {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .breakline {
+      border-bottom: solid 1px;
+    }
+
+    .additional-info-line {
+      font-size: 16px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    // styling for description and each individual bullet
+    .subtitle,
+    .description,
+    .action-item-list li:not(:first-child) {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+}

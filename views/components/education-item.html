@@ -1,6 +1,6 @@
-{% macro item(link, image, schoolName, subtitle, description) %}
+{% macro item(link, image, schoolName, subtitle, description, additionalInfoLines) %}
   {% set schoolClass = schoolName.split(' ').join('-').toLowerCase() %}
-  <div class="experience-item {{ companyClass }}">
+  <div class="experience-item education-item {{ schoolClass }}">
     {# Experience Image #}
     <a class="experience-item__image" href="{{ link }}" target="_blank">
       <img src="{{ image }}" />
@@ -8,22 +8,28 @@
 
     {# Experience Info #}
     <div class="experience-item__info">
-      <span class="company-name" onclick="clickTest(actionItems)">
+      <span class="school-name" onclick="clickTest(actionItems)">
         {{ schoolName }}
       </span>
 
-      <span class="job-title">
+      <span class="subtitle">
         {{ subtitle }}
       </span>
 
+      <div class="breakline" style="margin-top: 20px"></div>
+
+      {% if description %}
       <p class="description">
         {{ description }}
       </p>
-      <ul class="action-item-list">
-        {% for actionItem in actionItems %}
-          <li>{{ actionItem }}</li>
-        {% endfor %}
-      </ul>
+      {% endif %}
+
+      {% for infoLine in additionalInfoLines %}
+        <div class="additional-info-line">
+          <span><b>{{ infoLine.key }}</b></span>
+          <span>{{ infoLine.value }}</span>
+        </div>
+      {% endfor %}
     </div>
   </div>
 {% endmacro %}

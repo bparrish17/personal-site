@@ -1,4 +1,4 @@
-{% import "../components/education-item.html" as Education %}
+{% import "../components/employment-item.html" as Employment %}
 
 {% macro section(title, key, experienceArr) %}
   <section
@@ -15,16 +15,7 @@
     </div>
 
     {% for item in experienceArr %}
-      {{ 
-        Education.item(
-          item.link,
-          item.image,
-          item.schoolName,
-          item.subtitle,
-          item.description,
-          item.additionalInfoLines
-        ) 
-        }}
+      {{ Employment.item(item.link, item.image, item.companyName, item.positions, item.description, item.actionItems) }}
     {% endfor %}
 
     </section>
