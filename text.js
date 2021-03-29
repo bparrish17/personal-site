@@ -52,6 +52,7 @@ const EDUCATION_HISTORY = [
     image: 'img/fsa_logo.png',
     schoolName: 'Fullstack Academy',
     subtitle: 'software engineering immersive bootcamp',
+    dates: 'July 2017 - October 2017',
     description: `
       After graduating university, I participated in Fullstack Academy's 17 week software engineering bootcamp. At Fullstack I feel 
       that I built a strong foundation of coding knowledge through the studying and application of Javascript, HTML, CSS, React, 
@@ -64,6 +65,7 @@ const EDUCATION_HISTORY = [
     image: 'img/uschc_logo.png',
     schoolName: 'University of South Carolina Honors College',
     subtitle: 'darla moore school of business',
+    dates: 'May 2017',
     additionalInfoLines: [
       { key: 'Majors: ', value: 'International Business & Finance' },
       { key: 'Minor: ', value: 'Spanish' },
@@ -76,6 +78,10 @@ const PROFESSIONAL_SKILLS = [
   {
     name: 'Typescript',
     image: 'icons/typescript_logo.png'
+  },
+  {
+    name: 'Javascript',
+    image: 'icons/javascript_logo.png'
   },
   {
     name: 'Angular',
@@ -93,13 +99,17 @@ const PROFESSIONAL_SKILLS = [
     name: 'CSS3',
     image: 'icons/css_logo.png'
   },
-  // {
-  //   name: 'SCSS',
-  //   image: 'icons/scss_logo.png'
-  // },
+  {
+    name: 'SCSS',
+    image: 'icons/scss_logo.png'
+  },
   {
     name: 'Jasmine',
     image: 'icons/jasmine_logo.png'
+  },
+  {
+    name: 'Karma',
+    image: 'icons/karma_logo.png'
   },
   {
     name: 'ReactJS',

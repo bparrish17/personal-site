@@ -1,0 +1,36 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 20px 50px 20px 30px; }
+  .skills__set {
+    display: inherit;
+    flex-direction: inherit;
+    margin: 0 auto;
+    width: 40%; }
+    .skills__set:not(:first-child) {
+      margin-top: 50px; }
+    .skills__set h4 {
+      text-align: center;
+      letter-spacing: 1px; }
+    .skills__set .list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px; }
+      .skills__set .list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px; }
+        .skills__set .list__item:first-child {
+          margin-right: 20px; }
+        .skills__set .list__item:not(:first-child) {
+          margin: 0px 20px; }
+        .skills__set .list__item img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 10px;
+          object-fit: contain; }
+        .skills__set .list__item span {
+          font-size: 14px; }

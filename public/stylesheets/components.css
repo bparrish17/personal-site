@@ -90,6 +90,8 @@
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1px; }
+    .experience-item__info .school-name {
+      margin-bottom: 10px; }
     .experience-item__info .subtitle {
       font-size: 18px;
       letter-spacing: 1px; }
@@ -117,3 +119,13 @@
     .experience-item__info .action-item-list li:not(:first-child) {
       margin-top: 20px;
       font-size: 16px; }
+    .experience-item__info .subtitle {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px; }
+      .experience-item__info .subtitle__text {
+        font-size: 18px;
+        letter-spacing: 1px; }
+      .experience-item__info .subtitle__dates {
+        font-size: 16px;
+        letter-spacing: 0px; }

@@ -6,25 +6,27 @@
   </div>
 {% endmacro %}
 
+{% macro section(skills, technologies) %}
 <section class="section skills">
 
   {# Professional Skills #}
   <div class="skills__set professional-skills">
     <h4>here are some skills I use professionally</h4>
     <div class="list">
-      {% for skill in PROFESSIONAL_SKILLS %}
+      {% for skill in skills %}
         {{ skillItem(skill.name, skill.image) }}
       {% endfor %}
     </div>
   </div>
 
   {#  #}
-  <div class="skills_set professional-tech">
+  <div class="skills__set professional-tech">
     <h4>and some other technologies I enjoy working with</h4>
     <div class="list">
-      {% for skill in PROFESSIONAL_TECH %}
+      {% for skill in technologies %}
         {{ skillItem(skill.name, skill.image) }}
       {% endfor %}
     </div>
   </div>
 </section>
+{% endmacro %}

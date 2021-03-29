@@ -2,6 +2,7 @@
 
 {% import "./sections/employment-history.html" as EmploymentHistory %}
 {% import "./sections/education-history.html" as EducationHistory %}
+{% import "./sections/skills.html" as Skills %}
 <script src="index.js"></script>
 
 <html>
@@ -15,6 +16,7 @@
     {% include "./sections/hero.html" %}
     {{ EmploymentHistory.section('Professional Experience', 'employment-history', EMPLOYMENT_HISTORY) }}
     {{ EducationHistory.section('Education', 'education-history', EDUCATION_HISTORY) }}
+    {{ Skills.section(PROFESSIONAL_SKILLS, PROFESSIONAL_TECH) }}
     {% include "./components/scroller.html" %}
   </body>
 </html>

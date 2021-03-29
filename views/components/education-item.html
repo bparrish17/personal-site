@@ -1,4 +1,4 @@
-{% macro item(link, image, schoolName, subtitle, description, additionalInfoLines) %}
+{% macro item(link, image, schoolName, subtitle, dates, description, additionalInfoLines) %}
   {% set schoolClass = schoolName.split(' ').join('-').toLowerCase() %}
   <div class="experience-item education-item {{ schoolClass }}">
     {# Experience Image #}
@@ -12,9 +12,10 @@
         {{ schoolName }}
       </span>
 
-      <span class="subtitle">
-        {{ subtitle }}
-      </span>
+      <div class="subtitle">
+        <span class="subtitle__text">{{ subtitle }}</span>
+        <span class="subtitle__dates">{{ dates }}</span>
+      </div>
 
       <div class="breakline" style="margin-top: 20px"></div>
 

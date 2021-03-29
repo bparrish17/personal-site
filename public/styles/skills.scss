@@ -5,12 +5,13 @@
   padding: 20px 50px 20px 30px;
 
   &__set {
-    &.professional-skills {
-      width: 40%;
-    }
-  
-    &.professional-tech {
-      width: 40%;
+    display: inherit;
+    flex-direction: inherit;
+    margin: 0 auto;
+    width: 40%;
+
+    &:not(:first-child) {
+      margin-top: 50px;
     }
 
     h4 {
